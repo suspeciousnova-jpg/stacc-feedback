@@ -5,7 +5,7 @@ document.getElementById("staccForm").addEventListener("submit", async function (
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const response = await fetch("http://localhost:5000/submit-feedback", {
+    const response = await fetch("https://stacc-feedback.onrender.com/submit-feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
