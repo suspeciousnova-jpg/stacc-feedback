@@ -334,3 +334,28 @@ body {
     font-size: 1.6rem;
   }
 }
+
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255,255,255,0.4);
+  border-top: 3px solid #ffffff;
+  border-radius: 50%;
+  display: none;
+  animation: spin 0.8s linear infinite;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading .btn-text {
+  display: none;
+}
+
+.loading .loader {
+  display: inline-block;
+}
